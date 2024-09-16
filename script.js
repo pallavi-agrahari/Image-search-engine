@@ -1,6 +1,7 @@
 // create your own API access key and replace the key added below.
 
-const accessKey = "rq9OoN6Qq_Gv1n_Cdk_S0fFx2Km6rHHbbfQyhKxGOgo";
+//const accessKey = "rq9OoN6Qq_Gv1n_Cdk_S0fFx2Km6rHHbbfQyhKxGOgo";
+const accessKey="SrJc722HczBocdoX5AiH7gnHaOve1zxxte1tbRHQhpw";
 const searchForm = document.getElementById("search-form");
 const searchBox = document.getElementById("search-box");
 const searchResult = document.getElementById("search-result");
@@ -12,7 +13,7 @@ let page = 1;
 
 async function searchImages(){
     keyword = searchBox.value;
-    const url = `https://api.unsplash.com/search/photos?page=${page}&query=${keyword}&client_id=${accessKey}&per_page=12`;
+    const url = `https://api.unsplash.com/search/photos?page=1&query=office&client_id=SrJc722HczBocdoX5AiH7gnHaOve1zxxte1tbRHQhpw`;
 
     const response = await fetch(url);
     const data = await response.json();
